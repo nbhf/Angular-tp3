@@ -1,0 +1,41 @@
+.mini-word-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Pour centrer verticalement */
+    text-align: left;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+  
+  input[type="color"],
+  input[type="number"],
+  select {
+    width: 150px; /* Same width for all inputs */
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .output {
+    margin-top: 40px; /* Ajoute une marge entre les inputs et le paragraphe */
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

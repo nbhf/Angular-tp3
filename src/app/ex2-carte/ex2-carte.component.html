@@ -1,0 +1,91 @@
+
+
+
+<div class="form-container">
+    <h2>Enter Your Details</h2>
+    <!-- Form for editing business card details -->
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" type="text" [(ngModel)]="cardData.name" placeholder="Enter your name" />
+    </div>
+    <div>
+      <label for="profession">Profession:</label>
+      <input id="profession" type="text" [(ngModel)]="cardData.profession" placeholder="Enter your profession" />
+    </div>
+    <div>
+      <label for="quote">Quote:</label>
+      <input id="quote" type="text" [(ngModel)]="cardData.quote" placeholder="Enter your quote" />
+    </div>
+    <div>
+      <label for="motto">Motto:</label>
+      <input id="motto" type="text" [(ngModel)]="cardData.motto" placeholder="Enter your motto" />
+    </div>
+  </div>
+  
+  <div class="card-container">
+    <div class="card">
+      <div class="front">
+        <div class="cover">
+          <img src="images/rotating_card_thumb3.png" />
+        </div>
+        <div class="user">
+          <img class="img-circle" src="images/rotating_card_profile.png" />
+        </div>
+        <div class="content">
+          <div class="main">
+            <!-- Two-way data binding for name and profession -->
+            <h3 class="name">{{ cardData.name || 'Name' }}</h3>
+            <p class="profession">{{ cardData.profession || 'Profession' }}</p>
+  
+            <p class="text-center">{{ cardData.quote || '"Enter a quote"' }}</p>
+          </div>
+          <div class="footer">
+            <div class="rating">
+              <i class="fa fa-mail-forward"></i> Auto Rotation
+            </div>
+          </div>
+        </div>
+      </div> <!-- end front panel -->
+  
+      <div class="back">
+        <div class="header">
+          <h5 class="motto">{{ cardData.motto || '"Enter your motto"' }}</h5>
+        </div>
+        <div class="content">
+          <div class="main">
+            <h4 class="text-center">Job Description</h4>
+            <p class="text-center">{{ cardData.jobDescription || 'Enter job description' }}</p>
+  
+            <div class="stats-container">
+              <div class="stats">
+                <h4>{{ cardData.followers || 0 }}</h4>
+                <p>Followers</p>
+              </div>
+              <div class="stats">
+                <h4>{{ cardData.following || 0 }}</h4>
+                <p>Following</p>
+              </div>
+              <div class="stats">
+                <h4>{{ cardData.projects || 0 }}</h4>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-links text-center">
+            <a [href]="cardData.facebook || '#'">
+              <i class="fa fa-facebook fa-fw"></i>
+            </a>
+            <a [href]="cardData.google || '#'">
+              <i class="fa fa-google-plus fa-fw"></i>
+            </a>
+            <a [href]="cardData.twitter || '#'">
+              <i class="fa fa-twitter fa-fw"></i>
+            </a>
+          </div>
+        </div>
+      </div> <!-- end back panel -->
+    </div> <!-- end card -->
+  </div> <!-- end card-container -->
+  

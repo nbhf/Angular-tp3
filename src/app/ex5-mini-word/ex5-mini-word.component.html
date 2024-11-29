@@ -1,0 +1,41 @@
+<div class="mini-word-container">
+    <h2>Personnaliser votre paragraphe</h2>
+  
+    <div class="form-container">
+
+            <!-- Paragraphe modifiable -->
+    <div class="output">
+        <p
+          [ngStyle]="{
+            'color': textColor,
+            'font-size.px': fontSize,
+            'font-family': fontFamily
+          }"
+        >
+         Test      </p>
+    </div>
+
+      <!-- Sélecteur de couleur -->
+      <div class="form-group">
+        <input
+          id="textColor"
+          type="color"
+          [(ngModel)]="textColor"
+        />
+        <input
+          id="fontSize"
+          type="number"
+          [(ngModel)]="fontSize"
+          placeholder="Exemple : 16"
+          min="10"
+          max="72"
+        />
+        <select id="fontFamily" [(ngModel)]="fontFamily">
+          <option *ngFor="let font of fonts" [value]="font">{{ font }}</option>
+        </select>
+   
+    </div>
+  
+
+  </div>
+  

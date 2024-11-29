@@ -1,0 +1,5 @@
+input {
+    transition: all 0.3s ease; /* Ajoute une transition douce pour le changement de couleurs */
+    border-radius: 8px; /* Ajoute des bords arrondis */
+  }
+  

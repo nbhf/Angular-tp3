@@ -7,13 +7,17 @@ import { ColorChangerComponent } from './ex1-color-changer/ex1-color-changer.com
 import { FormsModule } from '@angular/forms';
 import { Ex2CarteComponent } from './ex2-carte/ex2-carte.component';
 import { Ex5MiniWordComponent } from './ex5-mini-word/ex5-mini-word.component';
+import { RainbowDirective } from './rainbow.directive';
+import { Ex6RainbowComponent } from './ex6-rainbow/ex6-rainbow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ColorChangerComponent,
     Ex2CarteComponent,
-    Ex5MiniWordComponent
+    Ex5MiniWordComponent,
+    RainbowDirective,
+    Ex6RainbowComponent
   ],
   imports: [
     BrowserModule,

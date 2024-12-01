@@ -1,8 +1,11 @@
+
+
+<h1>Color Changer</h1>
 <div class="center-container">
     <input #colorInput type="text" placeholder="Entrez une couleur" (input)="updateColor($event)" />
     <div [style.backgroundColor]="currentColor" class="color-box">Ceci est un Div.</div>
     <button (click)="resetColor(colorInput)">Réinitialiser</button>
     
     
-  </div>
+</div>
   

@@ -9,6 +9,7 @@ import { Ex2CarteComponent } from './ex2-carte/ex2-carte.component';
 import { Ex5MiniWordComponent } from './ex5-mini-word/ex5-mini-word.component';
 import { RainbowDirective } from './rainbow.directive';
 import { Ex6RainbowComponent } from './ex6-rainbow/ex6-rainbow.component';
+import { DefaultImagePipe } from './default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Ex6RainbowComponent } from './ex6-rainbow/ex6-rainbow.component';
     Ex2CarteComponent,
     Ex5MiniWordComponent,
     RainbowDirective,
-    Ex6RainbowComponent
+    Ex6RainbowComponent,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,
